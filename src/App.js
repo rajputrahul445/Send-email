@@ -100,7 +100,7 @@ class App extends Component {
     this.setState({ pageLoader: true });
     setTimeout(() => {
       this.setState({ pageLoader: false, emailSent: true });
-    }, 5000);
+    }, 3000);
   };
   formReset = e => {
     this.setState({
