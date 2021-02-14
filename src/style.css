@@ -1,0 +1,76 @@
+h1,
+p {
+  font-family: Lato;
+}
+body {
+  padding: 0 30px;
+  background-image: linear-gradient(
+    to right,
+    #19427e,
+    #0069a4,
+    #0090b9,
+    #00b6bb,
+    #10daae
+  );
+}
+.form_wrapper {
+  margin: 50px auto 0;
+  max-width: 600px;
+  box-shadow: 15px 15px 30px #0000004f;
+  position: relative;
+}
+.form_header {
+  background: #ee6e73;
+  padding: 15px;
+}
+.form_header h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+}
+.form_inr {
+  padding: 20px 50px;
+  background: #fff;
+}
+.submit_btn {
+  display: flex;
+  justify-content: space-between;
+}
+.input-field > input:focus ~ label {
+  -webkit-transform: translateY(-14px) scale(0.8);
+  transform: translateY(-14px) scale(0.8);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+.loader,
+.email_loader {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  background: #fff;
+}
+.loader img {
+  max-width: 400px;
+}
+.email_loader {
+  background: #ff7f50;
+}
+.email_loader img {
+  max-width: 500px;
+}
+button.btn.reset_btn {
+  background: #828282;
+}
+@media only screen and (max-width: 767px) {
+  .email_loader img,
+  .loader img {
+    max-width: 100%;
+  }
+}
